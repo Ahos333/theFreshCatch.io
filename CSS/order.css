@@ -1,0 +1,370 @@
+:root {
+    --main: #1F2041;
+    --background: #63b4d1;
+    --text: #044389;
+    --text2: #1F2041;
+    --random: #C9FBFF;
+    --extra: rgba(0, 0, 0, 0.4);
+}
+
+* {
+    -webkit-font-smoothing: anitaliased;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: proxima_novaregular;
+    font-size: 14px;
+}
+
+body {
+    display: block;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--light);
+    background: url(../img/background-img.jpg)center/cover fixed no-repeat;
+    object-fit: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.page-wrapper {
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--light);
+    z-index: 2;
+}
+
+/* header section */
+.info-icons {
+    color: var(--text);
+}
+
+
+.info h2 {
+    word-spacing: 0.6rem;
+    color: var(--text);
+    font-weight: light;
+}
+
+.info a {
+    transition: color 100ms ease-in-out;
+}
+
+.info a:hover {
+    color: var(--main);
+}
+
+#order {
+    color: var(--extra);
+}
+
+#header {
+    min-height: calc(100vh - 94px);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(99, 180, 209))
+    ,url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.restaurant {
+    display: hidden;
+}
+
+.fish-btn{
+    opacity: 0;
+
+}
+
+.header {
+    display: inline-block;
+    position: absolute;
+    background: var(--main);
+    
+}
+
+.header-link {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    left: 47.5%;
+    border-radius: 10px;
+    transition: all 2s ease;
+    color: var(--extra);
+    border: 1px solid var(--background);
+    border-radius: 10px;
+    background: var(--background);
+}
+
+.header-link:hover {
+    color: var(--random);
+}
+
+
+/* end of header section */
+
+
+
+
+/* navbar */
+.navbar {
+    background: var(--background);
+    padding: 20px 20px;
+    border: 2px solid var(--background);
+    transition: all 1s ease;
+    position: fixed;
+}
+
+.navbar-background {
+    padding: 5px 20px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    transition: all 1s ease;
+}
+
+.navbar-brand:hover {
+    color: var(--random);
+}
+
+.nav-link {
+    color: var(--text);
+    text-decoration: none;
+    transition: all 1s ease;
+    font-size: 23px;
+}
+
+.nav-link:hover {
+    color: var(--random);
+}
+
+.nav-btn {
+    background: var(--random);
+    color: var(--extra);
+    border: 2px solid var(--background);
+    font-size: 23px;
+    transition: all 1.25s ease;
+    border-radius: 50%;
+}
+
+.nav-btn:hover {
+    color: var(--extra);
+    border: 2px solid var(--background);
+    transform: scale(1.2);
+}
+
+.toggler-btn {
+    top: 0;
+    right: 0;
+    float: right;
+    border: 2px solid var(--extra);
+    padding: 5px;
+    transition: all 2s ease;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: var(--main);
+    transition: all 0.5 ease;
+    
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px,-8px);
+}
+
+
+.nav-item a {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.nav-item i {
+    right: 90%;
+    padding: 10px;
+}
+
+.navbar-brand:hover {
+    color: var(--random);
+}
+
+.nav-link {
+    color: var(--text);
+    text-decoration: none;
+    transition: all 1s ease;
+    font-size: 23px;
+}
+
+.nav-link:hover {
+    color: var(--random);
+}
+
+.nav-btn {
+    background: var(--random);
+    color: var(--extra);
+    border: 2px solid var(--background);
+    font-size: 23px;
+    transition: all 1.25s ease;
+    border-radius: 50%;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* end of navbar */
+
+/* Menu Category */
+#MenuContainer {
+    clear: left;
+    border: 1px solid blue;
+}
+
+#MenuContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.menu {
+    position: block;
+    background: var(--light);
+    width: 80vw;
+    height: 1500px;
+    margin: 50px;
+}
+
+.menu-content {
+    display: inline block;
+
+}
+
+.restaurant-header {
+    border: 1px solid var(--light);
+    padding: 20px 20px;
+}
+
+.category-list {
+    margin: 0 25px 0 0;
+    padding: 0;
+    float: left;
+    display: block;
+    height: 50vh;
+    
+}
+
+.category-list .btn a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+
+
+/*Categories */
+
+#appetizers div, #appetizers  div h5, #appetizers h6, #appetizers p {
+    display: none; 
+    position: relative;
+    margin-top: 0;   
+}
+
+
+#soups div h5 #soups h5, #soups h6, #soups p{
+    display: none;
+    position: relative;
+    margin-top: 0;    
+}
+
+#salads div h5 #salads h5, #salads h6, #salads p{
+    display: none;
+    position: relative;
+    margin-top: 0;    
+}
+
+#entrees div h5 #entrees h5, #entrees h6, #entrees p{
+    display: none; 
+    position: relative;
+    margin-top: 0;   
+}
+
+#desserts div h5 #desserts h5, #desserts h6, #desserts p{
+    display: none; 
+    position: relative;
+    margin-top: 0;   
+}
+
+#drinks div h5 #drinks h5, #drinks h6, #drinks p{
+    display: none;
+    position: relative;
+    margin-top: 0;    
+}
+
+#specials-deals div h5 #special-deals h5, #special-deals h6, #special-deals p{
+    display: none;   
+    position: relative;
+    margin-top: 0; 
+}
+
+
+.disclaimer {
+    padding: 80px 40px;
+    background: var(--extra);
+    color: var(--light);
+}
+
+/* footer */
+#back-to-top {
+    background: var(--random);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
+/* end of footer */
+
+
+
+
+@media (max-width: 768px) {
+
+    .header-link {
+        bottom: 3%;
+    }
+
+    .navbar {
+        background: var(--background);
+        padding: 5px 5px;
+        border: 2px solid var(--background);
+    }
+
+    body {
+        background: url(../img/background-img.jpg) center/cover fixed no-repeat;
+        border: 2px solid var(--background);
+    }
+
+}
+
+/* Aspnet form */
+/* MenuContainer*/
+/* */
+/* */
+/* */
+
