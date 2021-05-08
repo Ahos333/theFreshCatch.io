@@ -488,6 +488,10 @@ img {
     background: var(--background)
 }
 
+.input-group-prepend {
+    margin: 0; 
+ }
+
 #input-text {
     color: var(--main);
     padding: 5px 5px;
@@ -563,6 +567,15 @@ img {
     body {
         background: url(../img/background-img.jpg)center/cover fixed no-repeat;
         border: 2px solid var(--background);
+    }
+    
+    .credit, .footer-icons {
+        width: 100%;
+        text-align: center;
+    }
+
+    .credit h2 {
+        margin: auto 0;
     }
 
     
