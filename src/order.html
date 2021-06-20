@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Order Online</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+    <!-- Order.css -->
+        <link rel="stylesheet" href="../CSS/order.css">
+        <!-- BootStrap css -->
+  <link  rel="stylesheet" href="../CSS/bootstrap.min.css">
+  <!-- font awesome js -->
+  <script src="https://kit.fontawesome.com/4bceb425a8.js"></script>
+
+  <!-- JS Files -->
+
+  <script src="https://kit.fontawesome.com/4bceb425a8.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+    <div class="page-container">
+      <!-- social icons --> 
+      <div class="container-fluid info p-3 header" id="top-icons">
+          <div class="row">
+            <div class="col d-flex justify-content-between align-items-baseline
+            flex-wrap ">
+              <div class="info-icons p-2">
+                <a href="#" class="mr-2 primary-color">
+                  <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="mr-2 primary-color">
+                  <i class=" b fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+                  <a href="#" class="mr-2 primary-color">
+                  <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+                </a>
+                <a href="#" class="mr-2 primary-color">
+                <i class="fab fa-yelp fa-2x" aria-hidden="true"></i>
+                </a>
+        
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- end of social icons -->
+
+        <!-- navbar -->
+      <nav class="navbar navbar-expand-sm navbar-expand-lg">
+          <button class="navbar-toggler"
+            type="button" data-toggle="collapse" data-target="#myNavbar"
+            ><div class="toggler-btn">
+              <div class="bar bar1"></div>
+              <div class="bar bar2"></div>
+              <div class="bar bar3"></div>
+            </div>
+          </button>
+
+          
+        <div class="collapse navbar-collapse"id="myNavbar">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link text-capitalize">home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#menu" class="nav-link text-capitalize">menu</a>
+              </li>
+              <li class="nav-item">
+                <a href="#disclaimer" class="nav-link text-capitalize">disclaimer</a>
+              </li>
+              <li class="nav-item"><i class="fas fa-shopping-cart fa-2x" aria-hidden="true"></i></li>
+              <li class="nav-item"><i class="fas fa-shopping-bag fa-2x" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        
+        </nav>
+      <!-- end of navbar -->
+      <div class="page-wrapper py-2">
+        <section class="container-fluid info">
+                <div class="restaurant-header">
+
+                    <dl class="restaurant-info">
+                      <dt>Phone:</dt>
+                      <dd>
+                        <span class="tel">(000) 000-0000</span>
+                      </dd>
+                      <dt>
+                        Pickup Hours:
+                      </dt>
+                    </dl>
+                
+                    <dl class="restaurant-info">
+                      <dt>Delivery Hours:</dt>
+                        <dd>
+                          <span class="tel">10am - 11pm</span>
+                        </dd>
+                    </dl>
+                
+                    <dl class="restaurant-info">
+                      <dt>Accepted Cards:</dt>
+                        <dd>
+                          Mastercard, Visa, American Express, Discover
+                        </dd>
+                    </dl>
+                </div>
+            </section>    
+                  
+          
+            <div class="customer-message">
+              Every entree comes with freshly made bread.
+            </div>
+
+          
+      </div>   
+      
+    
+
+<!-- Online Ordering System -->
+
+
+
+    <!--  Menu  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mt-4 side-menu
+">
+        <ul class="nav nav-pills flex-column menu-column" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="menu-title nav-link active" id="appetizers-tab" data-toggle="tab" href="#appetizers" role="tab" aria-controls="appetizers" aria-selected="true">Appetizers</a>
+          </li>
+      
+          <li class="nav-item">
+            <a class="menu-title nav-link" id="soups-tab" data-toggle="tab" href="#soups" role="tab" aria-controls="soups" aria-selected="false">Soups</a>
+          </li>
+      
+          <li class="nav-item">
+            <a class="menu-title nav-link" id="salads-tab" data-toggle="tab" href="#salads" role="tab" aria-controls="salads" aria-selected="false">Salads</a>
+          </li>
+      
+          <li class="nav-item">
+            <a class="menu-title nav-link" id="entrees-tab" data-toggle="tab" href="#entrees" role="tab" aria-controls="entrees" aria-selected="false">Entrees</a>
+          </li>
+      
+          <li class="nav-item">
+            <a class="menu-title nav-link" id="desserts-tab" data-toggle="tab" href="#desserts" role="tab" aria-controls="desserts" aria-selected="false">Desserts</a>
+          </li>
+      
+          <li class="nav-item">
+            <a class="menu-title nav-link" id="drinks-tab" data-toggle="tab" href="#drinks" role="tab" aria-controls="drinks" aria-selected="false">Drinks</a>
+          </li>
+      
+          <li class="nav-item">
+              <a class="menu-title nav-link" id="deals-tab" data-toggle="tab" href="#deals" role="tab" aria-controls="deals" aria-selected="false">Deals</a>
+          </li>
+              
+        </ul>
+      </div>
+
+      <div class="col-sm-6 col-md-8 col-lg-8" id="menu">
+        <div class="tab-content" id="myTabContent">
+        <!--  Appetizers  -->
+        <div class="tab-pane fade show active" id="appetizers" role="tabpanel" aria-labelledby="appetizers-tab">
+            <h2 class="category-menu-title">Appetizers</h2>
+              <div class="menu-item-container">
+                  <div class="menu-items">
+                      <div class="menu-item">
+                        <h6 class="meal-name text-uppercase">calamari *</h6>
+                        <p class="menu-item-desc">Fried octopus served with our freshly made cocktail sauce.</p>
+                        <span class="menu-item-price">$9.95</span>
+                        <button class="btn order-btn">Order</button>
+                      </div>
+                      
+                      <div class="menu-item">
+                        <h6 class="meal-name text-uppercase">Crab Legs</h6>
+                        <p class="menu-item-desc">Fresh crab legs served with tartar sauce.</p>
+                        <span class="menu-item-price">$9.95</span>
+                        <button class="btn order-btn">Order</button>
+                      </div>
+                      
+                      <div class="menu-item text-uppercase">
+                        <h6 class="meal-name text-uppercase">fried shrimp *</h6>
+                        <p class="menu-item-desc">Fried and served with tartar sauce.</p>
+                        <span class="menu-item-price">$9.95</span>
+                        <button class="btn order-btn">Order</button>
+                      </div>
+                      
+                  </div>
+              </div>
+        </div>  
+  <!-- End of Appetizers -->
+
+
+  <div class="tab-pane fade" id="soups" role="tabpanel" aria-labelledby="soups-tab">
+      <h2 class="category-menu-title">Soups</h2>
+      <div class="menu-item-container">
+          <div class="menu-items">
+              <div class="menu-item my-5 p-3">
+                <h6 class="meal-name text-uppercase">spicy lobster soup *</h6>
+                <p class="menu-item-desc">Soup made with fresh lobster 
+                    and sprinkled with green onions.</p>
+                <span class="menu-item-price text-uppercase" price>$7.99</span>
+                <button class="btn order-btn">Order</button>
+              </div>
+              
+              <div class="menu-item">
+                <h6 class="meal-name text-uppercase">bouillabaisse</h6>
+                <p class="menu-item-desc">Seafood Stew stuffed with a variety of fish and 
+                    shellfish in a light, rich broth.</p>
+                <span class="menu-item-price" price>$9.99</span>
+                <button class="btn order-btn">Order</button>
+              </div>
+              
+              <div class="menu-item">
+                <h6 class="meal-name text-uppercase">soup of the day *</h6>
+                <p class="menu-item-desc">Tuna and Tomato Soup</p>
+                <span class="menu-item-price" price>$5.00</span>
+                <button class="btn order-btn">Order</button>
+              </div>
+              
+          </div>
+      </div>
+      
+  </div>
+  
+  <div class="tab-pane fade" id="salads" role="tabpanel" aria-labelledby="salads-tab">
+      <h2 class="category-menu-title">Salads</h2>
+      <div class="menu-item-container">
+          <div class="menu-items">
+              <div class="menu-item">
+                <h6 class="meal-name text-uppercase">traditional garden salad</h6>
+                <p class="menu-item-desc">With fresh lettuce, onions, tomatoes, carrots, and a choice of Ranch, 
+                    Italian or A Thousand Island dressing. </p>
+                <span class="menu-item-price text-uppercase" price>$7.99</span>
+                <button class="btn order-btn">Order</button>
+              </div>
+              
+              <div class="menu-item">
+                <h6 class="meal-name text-uppercase">Chicken Salad *</h6>
+                <p class="menu-item-desc">Grilled Chicken seasoned with lemon pepper and served on top of lettuce and a variety of vegetables.</p>
+                <span class="menu-item-price" price>$7.99</span>
+                <button class="btn order-btn">Order</button>
+              </div>
+              
+            </div>
+      </div>
+      
+  </div>
+
+
+  <div class="tab-pane fade" id="entrees" role="tabpanel" aria-labelledby="entrees-tab">
+      <h2 class="category-menu-title">Entrees</h2>
+      <div class="menu-item-container">
+          <div class="menu-items">
+              <div class="menu-item">
+                <h6 class="meal-name text-uppercase">salmon with scallops *</h6>
+                <p class="menu-item-desc">Grilled salmon cut and served alongside grilled scallops.</p>
+                <span class="menu-item-price text-uppercase" price>$9.95</span>
+                <button class="btn order-btn">Order</button>
+              </div>
+              
+              <div class="menu-item">
+                <h6 class="meal-name text-uppercase">fish fillet with garden salad</h6>
+                <p class="menu-item-desc">Grilled Tilapia fillet served garden salad.</p>
+                <span class="menu-item-price" price>$10.95</span>
+                <button class="btn order-btn">Order</button>
+              </div>
+              
+          </div>
+      </div>
+      
+  </div>
+
+
+  <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+      <h2 class="category-menu-title">Desserts</h2>
+      <div class="menu-item-container">
+          <div class="menu-items">
+              <div class="menu-item">
+                <h6 class="meal-name">Cheesecake</h6>
+                <p class="menu-item-desc">Choice of vanilla bean, strawberry, pineapple, or blueberry.</p>
+                <span class="menu-item-price text-uppercase" price>$3.00</span>
+                <button class="btn order-btn">Order</button>
+              </div>
+              
+              <div class="menu-item">
+                <h6 class="meal-name">taramisu</h6>
+                <p class="menu-item-desc">Served with vanilla ice cream.</p>
+                <span class="menu-item-price" price>$3.00</span>
+                <button class="btn order-btn">Order</button>
+                <p class="text-uppercase">Replace with chocolate or strawberry for $1</p>
+              </div>
+              
+              <div class="menu-item">
+                <h6 class="meal-name">Birthday Cake</h6>
+                <p class="menu-item-desc">Not your birthday? Don't worry! 
+                    You can still enjoy our special fish-shaped birthday cake.
+                    Choose between vanilla or chocolate cake.</p>
+                <span class="menu-item-price" price>$5.95</span>
+                <button class="btn order-btn">Order</button>
+                <p class="text-uppercase">Add vanilla, 
+                    strawberry, or chocolate ice cream for $2</p>
+              </div>
+              
+            </div>
+      </div>
+      
+    </div>
+  
+
+
+  <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+    <h2 class="category-menu-title">Drinks</h2>
+      <div class="menu-item-container">
+        <div class="menu-items">
+          <div class="menu-item">
+            <h6 class="meal-name">Pop</h6>
+              <p class="menu-item-desc">Pepsi, RC, Coca Cola, 
+                  Sprite, 7-Up, Root Beer, or Fanta</p>
+              <span class="menu-item-price text-uppercase">$2.00</span>
+            <button class="btn order-btn">Order</button>
+          </div>
+              
+          <div class="menu-item">
+           <h6 class="meal-name">Juice</h6>
+             <p class="menu-item-desc">Orange Juice, Apple Juice, Grape Juice,
+                 Pineapple Juice, or Fruit Juice</p>
+            <span class="menu-item-price">$2.00</span>
+            <button class="btn order-btn">Order</button>
+          </div>
+              
+          <div class="menu-item">
+            <h6 class="meal-name">Other Beverages</h6>
+              <p class="menu-item-desc">Lemonade, Limemade, or Bottled Water</p>
+            <span class="menu-item-price">$2.00</span>
+            <button class="btn order-btn">Order</button>
+          </div>
+              
+          <div class="menu-item">
+            <h6 class="meal-name">Coffee</h6>
+            <span class="menu-item-price text-uppercase">$2.99</span>
+              <button class="btn order-btn">Order</button>
+          </div>
+      
+        <div class="menu-item">
+            <h6 class="meal-name">Latte</h6>
+            <span class="menu-item-price text-uppercase">$2.99</span>
+              <button class="btn order-btn">Order</button>
+        </div>
+      
+        <div class="menu-item">
+            <h6 class="meal-name">Tea</h6>
+            <p class="menu-item-desc">English Breakfast, Earl Gray, Green Tea, Black Tea, Herbal Tea, or
+              Oolong</p>
+            <span class="menu-item-price text-uppercase" price>$2.99</span>
+              <button class="btn order-btn">Order</button>
+        </div>
+    
+    
+            </div>
+    
+      </div>
+        
+  </div>
+
+  
+      
+   
+      <div class="tab-pane fade" id="deals" role="tabpanel" aria-labelledby="deals-tab">
+          <h2 class="category-menu-title">Deals</h2>
+          <div class="menu-item-container">
+              <div class="menu-items">
+                  <div class="menu-item">
+                    <h6 class="meal-name">Lunch for Two</h6>
+                    <p class="menu-item-desc">Choose an appetizer, two drinks, and two entrees.</p>
+                    <span class="menu-item-price text-uppercase" >$35.99</span>
+                    <button class="btn order-btn">Order</button>
+                  </div>
+                  
+                  <div class="menu-item">
+                    <h6 class="meal-name text-uppercase">free birthday cake</h6>
+                    <p class="menu-item-desc">Enjoy a free slice of cake on your birthday.</p>
+                      <p class="text-uppercase">Add vanilla, 
+                      strawberry, or chocolate ice cream for $2</p>
+                      <button class="btn order-btn">Order</button>
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+    <section class="cart-section col-sm-6 col-md-11 col-lg-9 mr-6">
+      <div class="row">
+      <div class="container mb-3 py-3">
+        <h2 class="section-header">CART</h2>
+        <section class="cont-section">
+            <div class="cart-row mb-20 py-3">
+              <span class="cart-item cart-header cart-column">ITEM</span>
+              <span class="cart-price cart-header cart-column">PRICE</span>
+              <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+              
+            </div>
+        </section>
+          </div>
+      </div>
+
+      <div class="cart-total">
+          <Strong>Total:</Strong>
+          <span class="item-total">$0</span>
+            
+        </div>
+        <div class="btn-total">
+          <button class="btn btn-purchase">ORDER</button>
+        </div> 
+    </section>
+      </div>
+
+      
+
+      
+      
+        
+        
+       
+    </div>
+
+  </div>  
+  
+  
+  </div>
+
+
+
+  </div>
+
+</div>
+
+
+  <section class="comments py-5">
+    <div id="#disclaimer" class="discl">
+      <h2 class="info">Info</h2>
+      <ul class="list-info">
+        <li class="item-info">A 2,000 calorie-per-day diet is used for general nutritional advice, 
+          but calorie needs vary.</li>
+        <li class="item-info">** CONTAINS (OR MAY CONTAIN) RAW OR UNDERCOOKED INGREDIENTS. CONSUMING RAW OR UNDERCOOKED MEATS, POULTRY, SEAFOOD, SHELLFISH OR EGGS MAY INCREASE YOUR RISK OF FOODBORNE ILLNESS, 
+          ESPECIALLY IF YOU HAVE CERTAIN MEDICAL CONDITIONS.</li>
+        <li class="item-info">*Chef Special</li>
+      </ul>
+      
+    </div>
+  </section>
+
+  </div>
+
+  </div>
+
+
+
+    <footer>
+      <h2 class="primary-color p-2 text-uppercase footer">&copy;copyright 2019</h2>
+    </footer>
+    
+    
+
+<!-- ALWAYS PLACE JQUERY DOWNLOADS BEFORE JAVASCRIPT!!! -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="https://kit.fontawesome.com/4bceb425a8.js"></script>
+
+<!-- JS File --> 
+<script src="../JS/order.js" async></script> 
+    </body>
+</html>
+
+
+
